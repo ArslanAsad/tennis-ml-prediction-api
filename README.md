@@ -94,7 +94,7 @@ tennis-ml-predictor/
 │   ├── data_loader.py     # Load and validate CSV
 │   ├── features.py       # Elo, player/surface/H2H, diff features
 │   ├── train.py          # Train, tune, evaluate, persist
-│   └── predictor.py      # Predict + SHAP/importance
+│   └── predictor.py      # Predict + importance
 ├── api/
 │   └── main.py           # FastAPI app
 └── scripts/
