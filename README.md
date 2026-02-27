@@ -79,6 +79,13 @@ ATP-style columns like `winner_name`, `loser_name`, `winner_rank`, `loser_rank` 
    - `GET /players` — list of players from training data
    - `GET /model-info` — model name, feature list, metrics
 
+4. **Run UI**
+   In a separate terminal, run:
+
+   ```bash
+   streamlit run ui/app.py
+   ```
+
 ## Project layout
 
 ```
@@ -97,6 +104,8 @@ tennis-ml-predictor/
 │   └── predictor.py      # Predict + importance
 ├── api/
 │   └── main.py           # FastAPI app
+|   ui/
+|   └── app.py            # Streamlit UI
 └── scripts/
     ├── build_feature_store.py
     ├── merge_atp_to_matches.py
