@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-API_BASE = st.sidebar.text_input("API Base URL", value="http://localhost:8000").rstrip("/")
+API_BASE = st.sidebar.text_input("API Base URL", value="https://tennis-prediction-api.onrender.com").rstrip("/")
 
 st.markdown("""
 <style>
@@ -201,7 +201,7 @@ st.markdown("""
 # ── Helper: call API ────────────────────────────────────────────────────────────
 def api_get(path):
     try:
-        r = requests.get(f"{API_BASE}{path}", timeout=5)
+        r = requests.get(f"{API_BASE}{path}")
         r.raise_for_status()
         return r.json(), None
     except Exception as e:
