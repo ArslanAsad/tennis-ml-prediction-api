@@ -4,6 +4,10 @@ ML-based prediction of professional tennis match winners (ATP singles) using his
 
 **No post-match statistics are used** — only data known before the match (rankings, Elo, career/season win %, surface stats, H2H).
 
+## API Docs
+
+Refer to this [link](https://tennis-prediction-api.onrender.com/docs) for API docs:
+
 ## Features
 
 - **Data**: Load CSV with match date, both players, winner, surface, tournament level, rankings and points.
